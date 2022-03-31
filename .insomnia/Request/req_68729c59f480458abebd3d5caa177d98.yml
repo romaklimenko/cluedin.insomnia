@@ -1,0 +1,38 @@
+_id: req_68729c59f480458abebd3d5caa177d98
+type: Request
+parentId: fld_7781e7f81d014578a0c295b2fc44fa5a
+modified: 1648717351768
+created: 1648226267299
+url: "{{ graphqlUrl }}"
+name: Get all Rules
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"query getRules(\n\t$searchName: String\n\t$isActive:
+    Boolean\n\t$pageNumber: Int\n\t$sortBy: String\n\t$sortDirection: String\n)
+    {\n\tmanagement {\n\t\tid\n\t\trules(\n\t\t\tsearchName:
+    $searchName\n\t\t\tisActive: $isActive\n\t\t\tpageNumber:
+    $pageNumber\n\t\t\tsortBy: $sortBy\n\t\t\tsortDirection:
+    $sortDirection\n\t\t) {\n\t\t\ttotal\n\t\t\tdata
+    {\n\t\t\t\tid\n\t\t\t\tname\n\t\t\t\torder\n\t\t\t\tdescription\n\t\t\t\tisActive\n\t\t\t\tcreatedBy\n\t\t\t\tmodifiedBy\n\t\t\t\townedBy\n\t\t\t\tcreatedAt\n\t\t\t\tmodifiedAt\n\t\t\t\tauthor
+    {\n\t\t\t\t\tid\n\t\t\t\t\tusername\n\t\t\t\t\t__typename\n\t\t\t\t}\n\t\t\t\t__typename\n\t\t\t}\n\t\t\t__typename\n\t\t}\n\t\t__typename\n\t}\n}\n","operationName":"getRules"}'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_fb8344708ef74ae18667bee2263a62d8
+  - id: pair_da53848f75fa4bc8a4c74e0be0c7a3d8
+    name: Authorization
+    value: Bearer {% response 'body', 'req_d73f275265f24bc9b1c4ff66a93016fa',
+      'b64::JC5hY2Nlc3NfdG9rZW4=::46b', 'when-expired', 300 %}
+    description: ""
+authentication: {}
+metaSortKey: -1648223024123
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

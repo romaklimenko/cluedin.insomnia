@@ -1,0 +1,60 @@
+_id: req_191152c7e26a4f41a836601f33b13c50
+type: Request
+parentId: fld_6903be7830d44a1da32163e7f6036d51
+modified: 1648223333003
+created: 1647519229018
+url: "{{ _.apiUrl }}/v1/clue"
+name: Post a Clue
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "clue": {
+        "attribute-organization": "44ef620d-98ce-42c7-b763-ab499e748945",
+        "attribute-origin": "/CustomProduct#CluedIn:Product1",
+        "attribute-appVersion": "1.8.0.0",
+        "clueDetails": {
+          "data": {
+            "attribute-origin": "/CustomProduct#CluedIn:Product1",
+            "attribute-appVersion": "1.8.0.0",
+            "attribute-inputSource": "cluedin",
+            "entityData": {
+              "attribute-origin": "/CustomProduct#CluedIn:Product1",
+              "attribute-appVersion": "1.8.0.0",
+              "attribute-source": "rest",
+              "entityType": "/CustomProduct",
+              "name": "Product 1",
+              "modified-date": "02/02/2022",
+              "codes": ["/CustomProduct#CluedIn:Product1"],
+              "properties": {
+               "attribute-type": "/Metadata/KeyValue",
+               "property-customProduct.ProductName": "Product 1",
+               "property-customProduct.ProductNumber": "Product 1",
+               "property-customProduct.EANCode": "EAN-1",
+               "property-customProduct.SKUCode": "SKU-1"
+              }
+            }
+          }
+        }
+      }
+    }
+parameters:
+  - id: pair_a78c4c9ccb2543da9f3080ff6abd48d4
+    name: save
+    value: "true"
+    description: ""
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_076852eb9c564c8dbc4732ae94a84f04
+authentication: {}
+metaSortKey: -1647517728009
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

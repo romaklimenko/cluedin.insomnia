@@ -1,0 +1,43 @@
+_id: req_d73f275265f24bc9b1c4ff66a93016fa
+type: Request
+parentId: fld_6a053d94a7214a098d2a0fe90391d329
+modified: 1648222289603
+created: 1647515477537
+url: "{{authUrl}}"
+name: Get a Token
+description: ""
+method: POST
+body:
+  mimeType: application/x-www-form-urlencoded
+  params:
+    - id: pair_5f066b36c0ce413fa566c59c9454a18b
+      name: username
+      value: "{{ _.user }}"
+      description: ""
+    - id: pair_bd63f97369424af990c49ce94d0a8806
+      name: password
+      value: "{{ _.password }}"
+      description: ""
+    - id: pair_b34dccbf139d4b37bcce4e89c622f04e
+      name: client_id
+      value: "{{ _.organization }}"
+      description: ""
+    - id: pair_3d8d1263614b44ff843a3dd721b9ac65
+      name: grant_type
+      value: password
+      description: ""
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/x-www-form-urlencoded
+    id: pair_022639ef713444d485518010083d19af
+    disabled: false
+authentication: {}
+metaSortKey: -1647515477537
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

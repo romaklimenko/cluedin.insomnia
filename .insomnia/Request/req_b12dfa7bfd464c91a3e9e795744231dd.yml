@@ -1,0 +1,38 @@
+_id: req_b12dfa7bfd464c91a3e9e795744231dd
+type: Request
+parentId: fld_6903be7830d44a1da32163e7f6036d51
+modified: 1648226408820
+created: 1647517727959
+url: "{{ _.apiUrl }}/entity"
+name: Get an Entity by Id
+description: ""
+method: GET
+body: {}
+parameters:
+  - id: pair_729d00bfa50e44fa84b0024c4a5edf6a
+    name: id
+    value: c1a8558b-f4e4-5acb-846b-c33fab1031dc
+    description: ""
+  - id: pair_e6838e6b3526471cbc6c3ad5f639fed8
+    name: full
+    value: "true"
+    description: ""
+headers:
+  - id: pair_feec6bbef6cb42089470d2e282696ccb
+    name: Content-Type
+    value: application/json
+    description: ""
+  - id: pair_59641fdc379d4533a56804a612c44261
+    name: Authorization
+    value: Bearer {% response 'body', 'req_d73f275265f24bc9b1c4ff66a93016fa',
+      'b64::JC5hY2Nlc3NfdG9rZW4=::46b', 'when-expired', 300 %}
+    description: ""
+authentication: {}
+metaSortKey: -1647517727959
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

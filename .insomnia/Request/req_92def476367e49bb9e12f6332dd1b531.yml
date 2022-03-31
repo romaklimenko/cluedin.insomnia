@@ -1,0 +1,30 @@
+_id: req_92def476367e49bb9e12f6332dd1b531
+type: Request
+parentId: fld_7781e7f81d014578a0c295b2fc44fa5a
+modified: 1648717105878
+created: 1648223024073
+url: "{{apiUrl}}/rules/97994ea1-5533-44e7-b916-86fcf742a69f"
+name: Get a Rule by Id
+description: ""
+method: GET
+body: {}
+parameters:
+  - id: pair_7f1a6fcee8974deda26063837f719dad
+    name: ""
+    value: ""
+    description: ""
+headers:
+  - id: pair_a6c1f3b940194041a8482e8d20adb953
+    name: Authorization
+    value: Bearer {% response 'body', 'req_d73f275265f24bc9b1c4ff66a93016fa',
+      'b64::JC5hY2Nlc3NfdG9rZW4=::46b', 'when-expired', 300 %}
+    description: ""
+authentication: {}
+metaSortKey: -1648223024073
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
