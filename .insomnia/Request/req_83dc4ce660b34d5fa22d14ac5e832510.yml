@@ -1,26 +1,30 @@
-_id: req_92def476367e49bb9e12f6332dd1b531
+_id: req_83dc4ce660b34d5fa22d14ac5e832510
 type: Request
-parentId: fld_7781e7f81d014578a0c295b2fc44fa5a
-modified: 1648739080774
-created: 1648223024073
-url: "{{apiUrl}}/rules/97994ea1-5533-44e7-b916-86fcf742a69f"
-name: Get a Rule by Id
+parentId: fld_883b22571dc5419795f6dd2a15d02b10
+modified: 1648739084738
+created: 1648730018806
+url: "{{apiUrl}}/admin/commands/process/all/"
+name: Process All
 description: ""
 method: GET
 body: {}
 parameters:
-  - id: pair_7f1a6fcee8974deda26063837f719dad
-    name: ""
-    value: ""
+  - id: pair_e66043a35e804ade989e2e3f8bdf55d0
+    name: organizationId
+    value: "{{organizationId}}"
+    description: ""
+  - id: pair_5cead0863f84428eb1e75f7ae7b09ae1
+    name: minsize
+    value: "0"
     description: ""
 headers:
-  - id: pair_a6c1f3b940194041a8482e8d20adb953
+  - id: pair_e061f5e62b944c22bceec7293f586d7d
     name: Authorization
     value: Bearer {% response 'body', 'req_d73f275265f24bc9b1c4ff66a93016fa',
       'b64::JC5hY2Nlc3NfdG9rZW4=::46b', 'when-expired', 300 %}
     description: ""
 authentication: {}
-metaSortKey: -1648223024073
+metaSortKey: -1648730018806
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

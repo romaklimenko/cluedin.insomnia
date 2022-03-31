@@ -1,7 +1,7 @@
 _id: req_68729c59f480458abebd3d5caa177d98
 type: Request
 parentId: fld_7781e7f81d014578a0c295b2fc44fa5a
-modified: 1648717351768
+modified: 1648739081661
 created: 1648226267299
 url: "{{ graphqlUrl }}"
 name: Get all Rules
