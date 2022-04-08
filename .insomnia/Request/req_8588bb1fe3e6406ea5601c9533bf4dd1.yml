@@ -1,26 +1,22 @@
-_id: req_92def476367e49bb9e12f6332dd1b531
+_id: req_8588bb1fe3e6406ea5601c9533bf4dd1
 type: Request
-parentId: fld_7781e7f81d014578a0c295b2fc44fa5a
-modified: 1649418037062
-created: 1648223024073
-url: "{{ api }}/rules/97994ea1-5533-44e7-b916-86fcf742a69f"
-name: Get a Rule by Id
+parentId: fld_18833bd37bfb4ffcaea24a52dcc5e98f
+modified: 1649419798889
+created: 1649417190103
+url: "{{app}}/user"
+name: Get the current User
 description: ""
 method: GET
 body: {}
-parameters:
-  - id: pair_7f1a6fcee8974deda26063837f719dad
-    name: ""
-    value: ""
-    description: ""
+parameters: []
 headers:
-  - id: pair_a6c1f3b940194041a8482e8d20adb953
+  - id: pair_9098951e7991443e8f4e9257cbc2ac3f
     name: Authorization
     value: Bearer {% response 'body', 'req_d73f275265f24bc9b1c4ff66a93016fa',
       'b64::JC5hY2Nlc3NfdG9rZW4=::46b', 'when-expired', 300 %}
     description: ""
 authentication: {}
-metaSortKey: -1648223024073
+metaSortKey: -1649417190103
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

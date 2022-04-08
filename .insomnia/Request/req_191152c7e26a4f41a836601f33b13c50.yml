@@ -1,9 +1,9 @@
 _id: req_191152c7e26a4f41a836601f33b13c50
 type: Request
 parentId: fld_6903be7830d44a1da32163e7f6036d51
-modified: 1649058368595
+modified: 1649417846705
 created: 1647519229018
-url: "{{ _.apiUrl }}/v1/clue"
+url: "{{ _.api }}/v1/clue"
 name: Post a Clue
 description: ""
 method: POST
@@ -49,6 +49,11 @@ headers:
   - name: Content-Type
     value: application/json
     id: pair_076852eb9c564c8dbc4732ae94a84f04
+  - id: pair_c290329ec9fd4604ac44228b19a81ec7
+    name: Authorization
+    value: Bearer {% response 'body', 'req_d73f275265f24bc9b1c4ff66a93016fa',
+      'b64::JC5hY2Nlc3NfdG9rZW4=::46b', 'when-expired', 300 %}
+    description: ""
 authentication: {}
 metaSortKey: -1647517728009
 isPrivate: false

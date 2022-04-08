@@ -1,9 +1,9 @@
 _id: req_b12dfa7bfd464c91a3e9e795744231dd
 type: Request
 parentId: fld_6903be7830d44a1da32163e7f6036d51
-modified: 1649058393712
+modified: 1649417921006
 created: 1647517727959
-url: "{{ _.apiUrl }}/entity"
+url: "{{ _.api }}/entity"
 name: Get an Entity by Id
 description: ""
 method: GET
@@ -11,7 +11,7 @@ body: {}
 parameters:
   - id: pair_729d00bfa50e44fa84b0024c4a5edf6a
     name: id
-    value: c1a8558b-f4e4-5acb-846b-c33fab1031dc
+    value: 65516bdc-914c-5656-af03-04fdf06cadbd
     description: ""
   - id: pair_e6838e6b3526471cbc6c3ad5f639fed8
     name: full

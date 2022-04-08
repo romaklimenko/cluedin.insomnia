@@ -1,9 +1,9 @@
 _id: req_c95d6dd07d554e9786969abbef92758d
 type: Request
 parentId: fld_883b22571dc5419795f6dd2a15d02b10
-modified: 1648739083789
+modified: 1649421115530
 created: 1648730771804
-url: "{{apiUrl}}/admin/commands/process/entity/"
+url: "{{ api }}/admin/commands/process/entity/"
 name: Process Entity
 description: ""
 method: GET
@@ -11,7 +11,8 @@ body: {}
 parameters:
   - id: pair_e66043a35e804ade989e2e3f8bdf55d0
     name: organizationId
-    value: "{{organizationId}}"
+    value: "{% response 'body', 'req_8588bb1fe3e6406ea5601c9533bf4dd1',
+      'b64::JFswXS5BY2NvdW50Lk9yZ2FuaXphdGlvbklk::46b', 'when-expired', 300 %}"
     description: ""
   - id: pair_a8fe129dd3b340f292a5ed001bbc4045
     name: id

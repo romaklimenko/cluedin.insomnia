@@ -1,30 +1,30 @@
-_id: env_7346a701840a4006bbb45adc5a853243
+_id: env_1fcf159ae42d47a89b5298c898f1f46b
 type: Environment
 parentId: env_9b361006b64c2839c0d84781a9524f74882898e5
-modified: 1649420772123
-created: 1647515232953
-name: Home
+modified: 1649420690944
+created: 1649419828969
+name: _example_
 data:
-  protocol: http
-  domain: 127.0.0.1.nip.io:8888
+  domain: cluedin.dev
   organization: foobar
-  user: admin@foobar.com
-  password: Foobar23!
+  user: admin@cluedin.dev
+  password: foobar123
+  protocol: https
   api: "{{protocol}}://{{organization}}.{{domain}}/api/api"
-  app: "{{protocol}}://{{domain}}/app/api"
+  app: "{{protocol}}://app.{{domain}}/auth/api/account"
   auth: "{{protocol}}://{{organization}}.{{domain}}/auth/connect/token"
   graphql: "{{protocol}}://app.{{domain}}/graphql"
 dataPropertyOrder:
   "&":
-    - protocol
     - domain
     - organization
     - user
     - password
+    - protocol
     - api
     - app
     - auth
     - graphql
-color: "#0bb7ed"
+color: "#d6d6d6"
 isPrivate: false
-metaSortKey: 0
+metaSortKey: 4

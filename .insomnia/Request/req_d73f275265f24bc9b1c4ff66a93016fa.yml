@@ -1,9 +1,9 @@
 _id: req_d73f275265f24bc9b1c4ff66a93016fa
 type: Request
 parentId: fld_6a053d94a7214a098d2a0fe90391d329
-modified: 1648729802734
+modified: 1649419760187
 created: 1647515477537
-url: "{{authUrl}}"
+url: "{{auth}}"
 name: Get a Token
 description: ""
 method: POST

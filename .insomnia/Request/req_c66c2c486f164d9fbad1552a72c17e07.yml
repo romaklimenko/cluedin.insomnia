@@ -1,17 +1,18 @@
 _id: req_c66c2c486f164d9fbad1552a72c17e07
 type: Request
 parentId: fld_883b22571dc5419795f6dd2a15d02b10
-modified: 1648739082510
+modified: 1649417919351
 created: 1648730579133
-url: "{{apiUrl}}/admin/commands/process/all/"
-name: Process All by Entity Type
+url: "{{ api }}/admin/commands/process/all/"
+name: Process all by Entity Type
 description: ""
 method: GET
 body: {}
 parameters:
   - id: pair_e66043a35e804ade989e2e3f8bdf55d0
     name: organizationId
-    value: "{{organizationId}}"
+    value: "{% response 'body', 'req_8588bb1fe3e6406ea5601c9533bf4dd1',
+      'b64::JFswXS5BY2NvdW50Lk9yZ2FuaXphdGlvbklk::46b', 'when-expired', 300 %}"
     description: ""
   - id: pair_5cead0863f84428eb1e75f7ae7b09ae1
     name: minsize

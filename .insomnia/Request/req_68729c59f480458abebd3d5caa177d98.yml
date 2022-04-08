@@ -1,9 +1,9 @@
 _id: req_68729c59f480458abebd3d5caa177d98
 type: Request
 parentId: fld_7781e7f81d014578a0c295b2fc44fa5a
-modified: 1649058441548
+modified: 1649419645705
 created: 1648226267299
-url: "{{ graphqlUrl }}"
+url: "{{ graphql }}"
 name: Get all Rules
 description: ""
 method: POST
